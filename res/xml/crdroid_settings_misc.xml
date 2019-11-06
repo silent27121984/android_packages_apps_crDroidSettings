@@ -38,15 +38,7 @@
         android:summary="@string/aggressive_battery_summary"
         android:fragment="com.crdroid.settings.fragments.misc.AggressiveBattery"/> -->
 
-    <!-- Suspend actions
-    <PreferenceScreen
-        android:key="screenstate_category"
-        android:icon="@drawable/ic_sleep"
-        android:title="@string/screen_state_toggles_title" 
-        android:summary="@string/screen_state_toggles_summary" 
-        android:fragment="com.crdroid.settings.fragments.misc.ScreenStateToggles" />
-
-    <PreferenceScreen
+    <!-- <PreferenceScreen
         android:key="lock_clock"
         android:icon="@drawable/ic_clock"
         android:title="@string/lockclock_title"
@@ -128,6 +120,15 @@
         android:title="@string/smart_charging_title"
         android:summary="@string/smart_charging_summary"
         android:fragment="com.crdroid.settings.fragments.misc.SmartCharging"/>
+
+    <!-- Suspend actions -->
+    <com.crdroid.settings.preferences.SystemSettingMasterSwitchPreference
+        android:key="screen_state_toggles_enable_key"
+        android:icon="@drawable/ic_sleep"
+        android:fragment="com.crdroid.settings.fragments.misc.ScreenStateToggles"
+        android:title="@string/screen_state_toggles_title"
+        android:summary="@string/screen_state_toggles_summary"
+        android:defaultValue="false" />
 
     <!-- MediaScanner behavior on boot
     <com.crdroid.settings.preferences.SystemSettingListPreference
